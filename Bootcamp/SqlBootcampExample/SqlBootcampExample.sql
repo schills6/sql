@@ -2,20 +2,30 @@ DROP DATABASE IF EXISTS SqlBootcampExample;
 CREATE DATABASE SqlBootcampExample;
 use SqlBootcampExample;
 
+Create table State (
+	Code varchar(2) not null primary key,
+    Name varchar(50) not null
+    );
+    
 CREATE TABLE Customer (
 	ID int not null primary key auto_increment,
 	Name varchar(50) not null,
 	City varchar(50) not null,
 	State varchar(2) not null,
 	Sales decimal(18,0) not null,
-	Active bit not null
+	Active bit not null,
+    foreign key (State) references State (Code)
 );
 
-Create table State (
-	Code nvarchar(2) not null primary key,
-    Name varchar(50) not null
-    );
-    
+Insert State (Code, Name) Values ('AL', 'Alabama');
+Insert State (Code, Name) Values ('CA', 'California');
+Insert State (Code, Name) Values ('HI', 'Hawaii');
+Insert State (Code, Name) Values ('NJ', 'New Jersey');
+Insert State (Code, Name) Values ('OH', 'Ohio');
+Insert State (Code, Name) Values ('TX', 'Texas');
+Insert State (Code, Name) Values ('WA', 'Washington');  
+Insert State (Code, Name) Values ('NV', 'Nevada');
+
 Insert Customer (Name, City, State, Sales, Active) Values ('Acme, inc.','Jersey City','NJ',14381891,1);
 Insert Customer (Name, City, State, Sales, Active) Values ('Widget Corp','Seattle','WA',97865829,1);
 Insert Customer (Name, City, State, Sales, Active) Values ('123 Warehousing','Los Angeles','CA',77503710,1);
@@ -27,10 +37,3 @@ Insert Customer (Name, City, State, Sales, Active) Values ('Fake Brothers','Stoc
 Insert Customer (Name, City, State, Sales, Active) Values ('QWERTY Logistics','Lubbock','TX',17226905,1);
 Insert Customer (Name, City, State, Sales, Active) Values ('Demo, Inc.','Las Vegas','NV',69551557,1);
 
-Insert State Values ('AL', 'Alabama');
-Insert State Values ('CA', 'California');
-Insert State Values ('HI', 'Hawaii');
-Insert State Values ('NJ', 'New Jersey');
-Insert State Values ('OH', 'Ohio');
-Insert State Values ('TX', 'Texas');
-Insert State Values ('WA', 'Washington');
