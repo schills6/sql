@@ -32,13 +32,13 @@ CREATE TABLE LineItem (
 
 -- insert some rows into the Product table
 INSERT INTO Product VALUES
-(1, 'java', 'Murach''s Java Programming', '57.50'),
-(2, 'jsp', 'Murach''s Java Servlets and JSP', '57.50'),
-(3, 'mysql', 'Murach''s MySQL', '54.50'),
-(4, 'android', 'Murach''s Android Programming', '57.50'),
-(5, 'html5', 'Murach''s HTML5 and CSS3', '54.50'),
-(6, 'oracle', 'Murach''s Oracle and PL/SQL', '54.50'),
-(7, 'javascript', 'Murach''s JavaScript and jQuery', '57.50'),
+(1, 'java', 'Murach''s Java Programming', 57.50),
+(2, 'jsp', 'Murach''s Java Servlets and JSP', 57.50),
+(3, 'mysql', 'Murach''s MySQL', 54.50),
+(4, 'android', 'Murach''s Android Programming', 57.50),
+(5, 'html5', 'Murach''s HTML5 and CSS3', 54.50),
+(6, 'oracle', 'Murach''s Oracle and PL/SQL', 54.50),
+(7, 'javascript', 'Murach''s JavaScript and jQuery', 57.50),
 (8,'test','test description',10.00);
 
 -- insert some test data for invoice and line item, based on products above
