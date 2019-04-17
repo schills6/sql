@@ -20,7 +20,7 @@ insert Accounts (account_holder, balance, fees) Values ('Jonelle Wehrman', 3333.
 insert Accounts (account_holder, balance, fees) Values ('Steven Ross', 3322.00, 88.00);
 
 insert Transactions (amount, txn_type, account_ID) Values (500.00, 'Deposit', 3);
-insert Transactions (amount, txn_type, account_ID) Values (200.00, 'Withdrawal', 4);
+insert Transactions (amount, txn_type, account_ID) Values (-200.00, 'Withdrawal', 4);
 insert Transactions (amount, txn_type, account_ID) Values (200.00, 'Deposit', 4);
 insert Transactions (amount, txn_type, account_ID) Values (248.00, 'Deposit', 1);
 
