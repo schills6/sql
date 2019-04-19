@@ -10,7 +10,7 @@ Select A.FirstName, A.LastName, M.Title, M.Rating, M.Year, G.Name, C.Role
 		inner join Genre g
 			on g.ID = mg.GenreID
 
-order by m.Title, c.Role;
+order by m.Title;
 
 
     
