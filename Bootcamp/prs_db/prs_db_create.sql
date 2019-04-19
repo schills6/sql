@@ -128,4 +128,4 @@ INSERT INTO `product` (`ID`,`VendorID`,`PartNumber`,`Name`,`Price`,`Unit`,`Photo
 -- insert users
 INSERT INTO User (UserName, Password, FirstName, LastName, PhoneNumber, Email, IsReviewer, IsAdmin) VALUES
 ('rheinrich','yeehaw','Ryan','Heinrich','513-795-2584','heinrich.ryan@gmail.com',0,0),
-('emheinrich','
+('emheinrich','otter','Emmett','Heinrich','513-593-1666','schills@gmail.com',1,0),
