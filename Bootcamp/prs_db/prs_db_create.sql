@@ -128,4 +128,17 @@ INSERT INTO `product` (`ID`,`VendorID`,`PartNumber`,`Name`,`Price`,`Unit`,`Photo
 -- insert users
 INSERT INTO User (UserName, Password, FirstName, LastName, PhoneNumber, Email, IsReviewer, IsAdmin) VALUES
 ('rheinrich','yeehaw','Ryan','Heinrich','513-795-2584','heinrich.ryan@gmail.com',0,0),
-('emheinrich','otter','Emmett','Heinrich','513-593-1666','schills@gmail.com',1,0),
+('emheinrich','otter','Emmett','Heinrich','513-593-1666','schills@gmail.com',1,0);
+
+-- insert purchaserequest
+INSERT INTO PurchaseRequest (UserID, Description, Justification, DateNeeded, DeliveryMode, Status, Total, SubmittedDate) VALUES
+(3,'iPads and mouse','Need for my office','2019-05-15','Mail','New',542.97,'2019-04-21'),
+(4,'new computer','Old one broken','2019-04-28','Delivery','New',224.99,'2019-04-21');
+
+-- insert purchaserequestlineitems
+INSERT INTO PurchaseRequestLineItem (PurchaseRequestID, ProductID, Quantity) VALUES
+(1,1,2),
+(1,6,1),
+(2,10,1);
+
+
